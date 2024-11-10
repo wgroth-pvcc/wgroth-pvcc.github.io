@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Document</title>
+  </head>
+  <body>
+    <p>
+      <code>
+        # MODULE IMPORTATION
+import itertools
+from itertools import product
+import zipfile
+
+# INPUT
+print(input prompt)
+method = input()
+
+# METHOD FUNCTION
+def crack(method)
+  if (user inputs 1):
+    print(brute force will be used)
+    call open_zip_file()
+    call brute_force(zip_file)
+
+  else if (user inputs 2):
+    print(dictionary will be used)
+    call open_zip_file()
+    call open_dict_file()
+    call dictionary(zip_file, dict_file)
+
+  else if (user inputs 3):
+    print(dictionary will be used; if it fails, brute force will be used)
+    call open_zip_file()
+    call open_dict_file()
+    call dictionary(zip_file, dict_file)
+      if (dictionary(zip_file, dict_file) fails):
+        close dict_file
+        print(dictionary method has failed and brute force will be used)
+        call brute_force(zip_file)
+  else: 
+    print(failure message)
+    print(input prompt)
+    call (crack(method))
+
+# OPEN ZIP FILE FUNCTION
+def open_zip_file()
+  print(prompt for file name)
+  zip_file = input()
+  if (zip file exists): 
+    return zip_file
+  else:
+    call open_zip_file()
+
+# OPEN DICTIONARY FILE FUNCTION
+# extract content to list?
+def open_dict_file()
+  print(prompt for dictionary file name)
+  dict_file = input()
+  if (dict file exists): 
+    return dict_file
+  else:
+    call open_dict_file()
+
+# BRUTE FORCE FUNCTION
+def brute_force(zip_file)
+  iterate through passwords using itertools.product()
+  apply passwords to zip_file
+  close zip_file
+
+# DICTIONARY FUNCTION
+def dictionary(zip_file, dict_file)
+  # or iterate through password list?
+  iterate through passwords in dict_file
+  apply passwords to zip_file
+  close zip_file
+  close dict_file
+
+# FUNCTION CALL
+call crack(method)
+# combine functions?
+      </code>
+    </p>
+  </body>
+</html>
