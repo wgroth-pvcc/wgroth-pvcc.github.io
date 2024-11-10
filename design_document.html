@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Design Document</title>
-  </head>
-  <body>
-    <p>
-      <code>
-        # MODULE IMPORTATION
+# MODULE IMPORTATION
 import itertools
 from itertools import product
 import zipfile
@@ -33,10 +25,11 @@ def crack(method)
     call open_zip_file()
     call open_dict_file()
     call dictionary(zip_file, dict_file)
-      if (dictionary(zip_file, dict_file) fails):
-        close dict_file
-        print(dictionary method has failed and brute force will be used)
-        call brute_force(zip_file)
+    if (dictionary(zip_file, dict_file) fails):
+      close dict_file
+      print(dictionary method has failed and brute force will be used)
+      call brute_force(zip_file)
+
   else: 
     print(failure message)
     print(input prompt)
@@ -77,8 +70,6 @@ def dictionary(zip_file, dict_file)
 
 # FUNCTION CALL
 call crack(method)
+
+
 # combine functions?
-      </code>
-    </p>
-  </body>
-</html>
